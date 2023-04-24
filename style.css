@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-/* Nieuws */
+/* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
     border-radius: 20px;
@@ -17,4 +17,11 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     background-color: #6c757d;
     border-radius: 20px;
     color: #FFFFFF;
+}
+main .nieuwsartikel a{
+    color: #000000;
+    text-decoration: none;
+}
+main .nieuwsartikel:hover{
+    background-color: #CAC8C8;
 }
