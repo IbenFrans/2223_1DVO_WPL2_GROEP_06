@@ -4,6 +4,10 @@
     box-sizing: border-box;
     list-style-type: none;
 }
+/* navbar */
+.navbar_logo{
+    height: 3rem;
+}
 /* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
@@ -24,4 +28,7 @@ main .nieuwsartikel a{
 }
 main .nieuwsartikel:hover{
     background-color: #CAC8C8;
+}
+nav{
+    background-color: #ffffff;
 }
