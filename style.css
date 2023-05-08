@@ -5,9 +5,24 @@
     list-style-type: none;
 }
 /* navbar */
-.navbar_logo{
-    height: 3rem;
+nav{
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
 }
+#navbarlist li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #2F3953;
+}
+#navbarlist li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.linkactive{
+    font-weight: bold;
+}
+
 /* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
@@ -31,4 +46,11 @@ main .nieuwsartikel:hover{
 }
 nav{
     background-color: #ffffff;
+}
+
+/* Media Query Responsive */
+@media screen and (max-width: 780px) {
+    #navbarlist li a{
+        display: none;
+    }
 }
