@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pakketten</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+</head>
+
+
+
+<style>
+    .article-block {
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        transform: scale(1);
+        position: relative;
+    }
+
+    .article-block:hover {
+        background-color: #97CAD0;
+        transform: scale(1.05);
+    }
+
+    .article-title {
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .article-title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 3px;
+        background-color: #97CAD0;
+        z-index: -1;
+    }
+</style>
+
+
+
+<body>
+<nav>
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-center">
+            <div class="col p-7">
+                <h1>ACT</h1>
+            </div>
+            <div class="col p-4" id="menu">
+                <ul class="d-flex justify-content-end" style="list-style: none">
+                    <li class="ps-4"><a href="index.html">Home</a></li>
+                    <li class="ps-4"><a href="expertise.html">Expertise</a></li>
+                    <li class="ps-4"><a href="nieuws.html">Nieuws</a></li>
+                    <li class="ps-4"><a href="#">Over Ons</a></li>
+                    <li class="ps-4"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h1 class="text-center display-4">Title</h1>
+
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="assets/actcirkel.png" alt="Image" class="img-fluid" style="max-width: 100%;">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="article-block">
+                <h2 class="article-title">Article 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor enim sed ipsum dapibus, quis porttitor ex ultrices. Fusce in ante id elit tristique blandit. Suspendisse sed faucibus lectus.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="article-block">
+                <h2 class="article-title">Article 2</h2>
+                <p>Phasellus auctor, metus sit amet dictum rutrum, felis nunc volutpat mauris, quis dignissim enim massa vel mauris. Sed aliquam consequat massa, quis dictum nunc rhoncus eu.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="article-block">
+                <h2 class="article-title">Article 3</h2>
+                <p>Mauris id nisl ac ex dictum faucibus. Curabitur blandit dolor vitae ex facilisis, eget suscipit justo venenatis. Vivamus rhoncus, velit ut porttitor malesuada, nulla metus aliquet sapien, eu interdum nisl turpis vitae metus.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
