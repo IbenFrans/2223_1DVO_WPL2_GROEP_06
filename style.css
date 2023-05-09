@@ -14,6 +14,9 @@ main ul#nieuws__categorie{
     border-radius: 20px;
 
 }
+main .nieuwfeitjes img{
+    width: 100%;
+}
 main #nieuws__categorie li{
     padding: 0.5rem;
 }
