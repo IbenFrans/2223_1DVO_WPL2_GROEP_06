@@ -26,6 +26,9 @@ nav{
     font-weight: bold;
 }
 /* Hamburger */
+#hamburgerResponsive{
+    display: none;
+}
 #hamburger{
     display: none;
     height: 26px;
@@ -92,6 +95,15 @@ nav{
     background-color: #ffffff;
 }
 
+/* Footer */
+.footerlogo svg {
+    fill: #2F3953;
+    width: 3rem;
+}
+.footerlogo svg:hover{
+    fill: #97CAD0;
+}
+
 /* Media Query Responsive */
 @media screen and (max-width: 780px) {
     #navbarlist li a{
@@ -100,5 +112,8 @@ nav{
     #hamburger{
         display: block;
         display: flex;
+    }
+    #hamburgerResponsive{
+        display: block;
     }
 }
