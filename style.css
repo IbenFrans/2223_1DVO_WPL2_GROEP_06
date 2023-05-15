@@ -4,11 +4,16 @@
     box-sizing: border-box;
     list-style-type: none;
 }
+main{
+    margin-top: 7rem;
+}
 /* navbar */
 nav{
+    height: 7rem;
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
+    border-bottom: #6c757d 2px solid;
 }
 #logoNav{
     height: 4rem;
@@ -69,7 +74,20 @@ nav{
 #hamburgerMenu ul li:hover{
     background-color: #E1E1E1;
 }
-
+/* Index pagina */
+#indexPagina main{
+    min-height: calc(100vh - 236px - 7rem);
+    background-image: url("assets/indexcover.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#indexPagina footer{
+    position: absolute;
+    bottom: 0;
+}
+#indexPagina main #cover div{
+    background-color: #6c757d;
+}
 /* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
@@ -99,6 +117,9 @@ nav{
 }
 
 /* Footer */
+footer{
+    overflow: hidden;
+}
 .footerlogo svg {
     fill: #2F3953;
     width: 3rem;
@@ -106,7 +127,10 @@ nav{
 .footerlogo svg:hover{
     fill: #97CAD0;
 }
-
+#terms{
+    height: 1rem;
+    font-size: 0.7rem;
+}
 /* Media Query Responsive */
 @media screen and (max-width: 780px) {
     #navbarlist li a{
