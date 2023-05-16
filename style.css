@@ -14,19 +14,40 @@ nav{
     position: fixed;
     top: 0;
     border-bottom: #6c757d 2px solid;
-    z-index: 2;
 }
 #logoNav{
     height: 4rem;
+    transition: all .2s ease-in-out;
 }
-#navbarlist li a, #hamburgerMenu li a {
+#logoNav:hover{
+    fill: #97CAD0;
+    transform: scale(1.2);
+}
+#navbarlist li a, #hamburgerMenu ul li a {
     list-style-type: none;
     text-decoration: none;
     color: #2F3953;
+    padding: 0.7rem;
+    position: relative;
 }
-#navbarlist li a:hover, #hamburgerMenu li a:hover {
+#navbarlist li a:hover, #hamburgerMenu ul li a:hover {
     color: #000000;
-    text-decoration: underline;
+}
+
+#navbarlist li a::before, #hamburgerMenu ul li a::before {
+    background: #97CAD0;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+#navbarlist li a:hover::before, #hamburgerMenu ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 .linkactive{
     font-weight: bold;
@@ -42,7 +63,6 @@ nav{
     position: absolute;
     top: 45px;
     right: 20px;
-    z-index: 2;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -65,16 +85,16 @@ nav{
     transition: transform 0.4s ease-in-out;
 }
 #hamburgerMenu{
-    background-color: #ffffff;
     transition: transform 0.5s ease-in-out;
     display: none;
+    background-color: #ffffff95;
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
 }
 #hamburgerMenu ul li a{
     display: block;
 }
-#hamburgerMenu ul li:hover{
-    background-color: #E1E1E1;
-}
+
 /* Index pagina */
 #indexPagina main{
     min-height: calc(100vh - 236px - 7rem);
@@ -116,6 +136,10 @@ div#cirkelSocials{
     width: 3rem;
     fill: #2F3953;
     margin: 0.5rem 0;
+    transition: all .2s ease-in-out;
+}
+#socials ul li a svg:hover{
+    transform: scale(1.2);
 }
 #socials ul li a svg:hover{
     fill: #ffffff;
@@ -166,6 +190,10 @@ footer{
 .footerlogo svg {
     fill: #2F3953;
     width: 3rem;
+    transition: all .2s ease-in-out;
+}
+.footerlogo svg:hover{
+    transform: scale(1.2);
 }
 .footerlogo svg:hover{
     fill: #97CAD0;
