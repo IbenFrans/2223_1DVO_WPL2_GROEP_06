@@ -160,7 +160,10 @@ main ul#nieuws__categorie{
     border-radius: 20px;
 
 }
-main .nieuwfeitjes img{
+main .nieuwfeitjes  img{
+    width: 100%;
+}
+main .nieuwsdetail  img{
     width: 100%;
 }
 main #nieuws__categorie li{
