@@ -14,6 +14,7 @@ nav{
     position: fixed;
     top: 0;
     border-bottom: #6c757d 2px solid;
+    z-index: 2;
 }
 #logoNav{
     height: 4rem;
@@ -77,7 +78,7 @@ nav{
 /* Index pagina */
 #indexPagina main{
     min-height: calc(100vh - 236px - 7rem);
-    background-image: url("assets/indexcover.jpg");
+    background-image: url("assets/indexcoverLigther.png");
     background-position: center;
     background-size: cover;
 }
@@ -86,8 +87,49 @@ nav{
     bottom: 0;
 }
 #indexPagina main #cover div{
-    background-color: #6c757d;
+    color: #97B1DE;
+    font-weight: bold;
 }
+#indexPagina main #cover div h1{
+    font-size: 10rem;
+}
+div#cirkelSocials{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    margin-left: -12rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20rem;
+    background-color: #97B1DE98;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+}
+#socials{
+    position: absolute;
+    top: 20%;
+    left: -3rem;
+
+}
+#socials ul li a svg{
+    width: 3rem;
+    fill: #2F3953;
+    margin: 0.5rem 0;
+}
+#socials ul li a svg:hover{
+    fill: #ffffff;
+}
+#socials ul li a svg#facebook{
+    width: 3.5rem;
+    margin-bottom: -5px;
+    margin-left: -4px;
+}
+#socials ul li a svg#twitter{
+    width: 2.5rem;
+    margin-left: 5px;
+}
+
 /* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
@@ -119,6 +161,7 @@ nav{
 /* Footer */
 footer{
     overflow: hidden;
+    background-color: #FFFFFF;
 }
 .footerlogo svg {
     fill: #2F3953;
@@ -143,4 +186,14 @@ footer{
     #hamburgerResponsive{
         display: block;
     }
+    #indexPagina{
+        height: calc(100vh);
+    }
+    #socials, #cirkelSocials{
+        display: none;
+    }
+    #indexPagina footer{
+        position: static;
+    }
+
 }
