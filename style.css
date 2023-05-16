@@ -153,6 +153,47 @@ div#cirkelSocials{
     width: 2.5rem;
     margin-left: 5px;
 }
+/* Expertise */
+#expertise #expertiseBanner{
+    text-align: center;
+    padding: 10rem 5rem;
+    font-size: 4rem;
+    color: #97CAD0;
+}
+.expertiseSvg{
+    fill: white;
+}
+.expertiseBlock{
+    max-width: 70%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 4rem;
+    transition: all .2s ease-in-out;
+}
+.expertiseBlock:hover{
+    transform: scale(1.1);
+}
+#vastgoed{
+    background-image: url("assets/vastgoed.png");
+}
+#ondernemingsrecht{
+    background-image: url("assets/ondernemingsrecht.png");
+}
+#fusies_overnames{
+    background-image: url("assets/fusies_overnames.png");
+}
+.expertiseTexts{
+    padding: 2rem;
+    backdrop-filter: blur(25px);
+}
+.circle{
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+}
 
 /* Nieuws pagina */
 main ul#nieuws__categorie{
