@@ -14,6 +14,7 @@ nav{
     position: fixed;
     top: 0;
     border-bottom: #6c757d 2px solid;
+    z-index: 4;
 }
 #logoNav{
     height: 4rem;
@@ -35,14 +36,13 @@ nav{
 }
 
 #navbarlist li a::before, #hamburgerMenu ul li a::before {
-    background: #97CAD0;
+    background: #97CAD080;
     content: "";
     inset: 0;
     position: absolute;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s ease-in-out;
-    z-index: -1;
 }
 
 #navbarlist li a:hover::before, #hamburgerMenu ul li a:hover::before {
@@ -90,6 +90,7 @@ nav{
     background-color: #ffffff95;
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
+    border-bottom: #6c757d 2px solid;
 }
 #hamburgerMenu ul li a{
     display: block;
@@ -186,14 +187,25 @@ div#cirkelSocials{
     padding: 2rem;
     backdrop-filter: blur(25px);
 }
-.circle{
-    height: 2rem;
-    width: 2rem;
-    background-color: red;
-    position: absolute;
-    top: 7rem;
-    left: 0;
-}
+/*.circle{*/
+/*    width: 15rem;*/
+/*    height: 15rem;*/
+/*    border-radius: 100%;*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+
+/*}*/
+/*#expertiseCircle1{*/
+/*    background-color: #97CAD0;*/
+/*    top: 30rem;*/
+/*    left: -7.5rem;*/
+/*}*/
+/*#expertiseCircle2{*/
+/*    background-color: #97B1DE;*/
+/*    position: relative;*/
+/*    top: 30rem;*/
+/*    left: 50rem;*/
+/*}*/
 
 /* Nieuws pagina */
 main ul#nieuws__categorie{
@@ -268,4 +280,11 @@ footer{
         position: static;
     }
 
+}
+@media screen and (min-width: 780px) {
+    #hamburgerMenu{
+        position: absolute;
+        top: -30rem;
+        overflow: hidden;
+    }
 }
