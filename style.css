@@ -226,6 +226,7 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     background-color: #6c757d;
     border-radius: 20px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 main .nieuwsartikel a{
     color: #000000;
