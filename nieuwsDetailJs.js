@@ -36,3 +36,4 @@ text2.innerHTML = "";
 voegTextToe("detail__text2", artikel.text[2]);
 voegTextToe("detail__text2", artikel.text[3]);
 voegTextToe("detail__text2", artikel.text[4]);
+voegTextToe("detail__text2", "Source: https://www.advocaat.be/nl")
