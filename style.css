@@ -556,6 +556,14 @@ nav{
     color:#FFFFFF;;
 }
 
+#akkoord__submit{
+    cursor: pointer;
+}
+
+#errorMessOverOns{
+    display: none;
+}
+
 h4{
     font-weight: bold;
 }
