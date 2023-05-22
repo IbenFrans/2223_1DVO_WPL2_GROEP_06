@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    font-family: "greycliff-cf", sans-serif;
 }
 main{
     margin-top: 7rem;
@@ -110,12 +111,19 @@ nav{
     bottom: 0;
 }
 #indexPagina main #cover div{
-    color: #97B1DE;
+    color: #2F3953;
     font-weight: bold;
 }
 #indexPagina main #cover div h1{
     font-size: 10rem;
 }
+#indexHero{
+    border-radius: 20px;
+    background-color: #ffffff95;
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+}
+
 div#cirkelSocials{
     position: absolute;
     top: 20%;
@@ -156,6 +164,7 @@ div#cirkelSocials{
     width: 2.5rem;
     margin-left: 5px;
 }
+
 /* Expertise */
 #expertise #expertiseBanner{
     text-align: center;
@@ -629,6 +638,14 @@ h4{
 #tekst-contact{
     color: #FFFFFF;
 }
+.contact__link a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+.contact__link a:hover{
+    color: #97CAD0;
+}
 
 /* Footer */
 footer{
@@ -670,6 +687,10 @@ footer{
     }
     #indexPagina footer{
         position: static;
+    }
+
+    #indexPagina main #cover div h1{
+        font-size: 7rem;
     }
 
 }
