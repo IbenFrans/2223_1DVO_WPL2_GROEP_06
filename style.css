@@ -375,6 +375,87 @@ nav{
 #pakketten{
     margin-bottom: 10rem;
 }
+/* Contact pagina */
+#body-contact{
+    background-color: #2F3953;
+}
+.contactpagina{
+    background-color: #2F3953;
+}
+.tekst-contact{
+    color: #FFFFFF;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.form-check{
+    color:#FFFFFF;;
+}
+
+h4{
+    font-weight: bold;
+}
+
+#titel-formulier{
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+}
+.formulier{
+    margin: 0 0 20px 0;
+}
+#stad-contact{
+    font-weight: bold;
+}
+/*socials contact*/
+#socials-contact{
+    position: absolute;
+    top: 20%;
+    left: -3rem;
+
+}
+#socials-contact ul li a svg{
+    width: 3rem;
+    fill: #FFFFFF;
+    margin: 0.5rem 0;
+    transition: all .2s ease-in-out;
+}
+#socials-contact ul li a svg:hover{
+    transform: scale(1.2);
+}
+#socials-contact ul li a svg:hover{
+    fill: #ffffff;
+}
+#socials-contact ul li a svg#facebook{
+    width: 3.5rem;
+    margin-bottom: -5px;
+    margin-left: -4px;
+}
+#socials-contact ul li a svg#twitter{
+    width: 2.5rem;
+    margin-left: 5px;
+}
+.button{
+    transition-duration: 0.4s;
+    background-color: #2F3953;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 35px;
+}
+.button:hover{
+    background-color: #FFFFFF;
+    color: #2F3953;
+    border: 2px solid #2F3953;
+}
+#tekst-contact{
+    color: #FFFFFF;
+}
 
 /* Footer */
 footer{
