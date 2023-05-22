@@ -1,5 +1,7 @@
 let gekozenPakket = "";
 let gekozenMaand = "";
+let gekozenTotaalPrijs = "";
+let gekozenBetaling = "";
 
 let basic = document.getElementById("basicPakket");
 let pro = document.getElementById("proPakket");
@@ -9,50 +11,156 @@ let basicPrijs = [15, 14, 13];
 let fullPrijs = [20, 19, 18];
 let proPrijs = [25, 24, 23];
 
-let maand3 = document.getElementById("prijs_3maand");
-let maand6 = document.getElementById("prijs_6maand");
-let maand12 = document.getElementById("prijs_12maand");
+function Position(obj){
+    let currenttop = 0;
+    if (obj.offsetParent){
+        do {
+            currenttop += obj.offsetTop;
+        }while ((obj = obj.offsetParent));
+        return [currenttop];
+    }
+}
 
 function laadVolgendeStap(type){
+    basic.style.transform = "scale(1)";
+    pro.style.transform = "scale(1)";
+    full.style.transform = "scale(1)";
+    basic.style.backgroundColor = "transparent";
+    pro.style.backgroundColor = "transparent";
+    full.style.backgroundColor = "transparent";
+
     let pakket = type;
     pakket = pakket.toUpperCase();
     let naam = document.getElementById("pakket_naam");
     naam.textContent = pakket;
 
+    let prijsMaand3 = document.getElementById("prijs_3maand");
+    let prijsMaand6 = document.getElementById("prijs_6maand");
+    let prijsMaand12 = document.getElementById("prijs_12maand");
+
     switch (pakket){
         case "BASIC":
-            maand3.textContent = basicPrijs[0];
-            maand6.textContent = basicPrijs[1];
-            maand12.textContent = basicPrijs[2];
+            prijsMaand3.textContent = basicPrijs[0];
+            prijsMaand6.textContent = basicPrijs[1];
+            prijsMaand12.textContent = basicPrijs[2];
             break;
         case "PRO":
-            maand3.textContent = proPrijs[0];
-            maand6.textContent = proPrijs[1];
-            maand12.textContent = proPrijs[2];
+            prijsMaand3.textContent = proPrijs[0];
+            prijsMaand6.textContent = proPrijs[1];
+            prijsMaand12.textContent = proPrijs[2];
             break;
         case "FULL":
-            maand3.textContent = fullPrijs[0];
-            maand6.textContent = fullPrijs[1];
-            maand12.textContent = fullPrijs[2];
+            prijsMaand3.textContent = fullPrijs[0];
+            prijsMaand6.textContent = fullPrijs[1];
+            prijsMaand12.textContent = fullPrijs[2];
             break;
     }
 
     gekozenPakket = type;
+    let selected = document.getElementById(type.toLowerCase() + "Pakket");
+    selected.style.transform = "scale(1.05)";
+    selected.style.backgroundColor = "#97CAD0";
+
+    let volgendeStap = document.getElementById("paketten__volgendeStap")
+    volgendeStap.style.display = "block";
+    window.scrollTo(0, Position(volgendeStap) - 100);
+
+}
+
+function getPrijs(type, maand){
+    let index = "";
+    switch (maand){
+        case 3:
+            index = 0;
+            break;
+        case 6:
+            index = 1;
+            break;
+        case 12:
+            index = 2;
+            break;
+    }
+
+    if(type.toLowerCase() === "basic"){
+        return basicPrijs[index];
+    } else if (type.toLowerCase() === "full"){
+        return fullPrijs[index];
+    } else if (type.toLowerCase() === "pro"){
+        return fullPrijs[index];
+    } else{
+        return null;
+    }
 }
 
 function laadBetaling(type, maand){
     gekozenMaand = maand;
+    console.log("type: " + " maand: " + maand);
     let pakketTitel = document.getElementById("pakket_betaling");
     pakketTitel.textContent = type.toUpperCase();
 
-    // let pakketMaanden = document.getElementById("pakket_betaling_maanden");
-    // pakketMaanden.textContent = maand;
+    let pakketMaanden = document.getElementById("pakket_betaling_maanden");
+    pakketMaanden.textContent = maand;
+
+    let prijs = getPrijs(type, maand);
+    let totaalPrijs = maand * prijs;
+    let totaal = maand + " x €" + prijs + " =";
+    let totaalSpan = document.getElementById("pakket_betaling_totaal");
+    let totaalGroot = document.getElementById("pakket_betaling_totaal_groot");
+    totaalSpan.textContent = totaal;
+    totaalGroot.textContent = "€" + totaalPrijs;
+
+    gekozenTotaalPrijs = totaalPrijs;
+
+    document.getElementById("pakketten__betaling").style.display = "block";
+    document.getElementById("paketten__volgendeStap").style.display = "none";
+    document.getElementById("pakketten__aanbod").style.display = "none";
+    window.scrollTo(0, Position(document.getElementById("pakketten__betaling")) - 150);
+}
+
+function betalingswijze(betaling){
+    let betalingswijzes = document.getElementById("betalingswijze").children;
+    for(let i = 0; i < betalingswijzes.length; i++){
+        betalingswijzes[i].style.transform = "scale(1)";
+        betalingswijzes[i].style.backgroundColor = "transparent";
+
+    }
+    let selected = document.getElementById("svg_" + betaling);
+    selected.style.transform = "scale(1.05)";
+    selected.style.backgroundColor = "#97CAD0";
+
+    gekozenBetaling = betaling;
+}
+
+function returnPakketten(){
+    document.getElementById("pakketten__betaling").style.display = "none";
+    document.getElementById("paketten__volgendeStap").style.display = "block";
+    document.getElementById("pakketten__aanbod").style.display = "block";
+}
+
+function vervoledigBetaling(){
+    let email = document.getElementById("pakketten__checkout__email").value;
+    alert("Pakket: " + gekozenPakket + "\nMaanden: " + gekozenMaand + "\nBetaling: " + gekozenBetaling + "\nEmail: " + email + "\nTotaal: €" + gekozenTotaalPrijs);
 }
 
 basic.addEventListener("click", () => laadVolgendeStap("basic"));
 pro.addEventListener("click", () => laadVolgendeStap("pro"));
 full.addEventListener("click", () => laadVolgendeStap("full"));
 
-maand3.addEventListener("click", () => laadBetaling(gekozenPakket, "12"));
-maand6.addEventListener("click", () => laadBetaling());
-maand12.addEventListener("click", () => laadBetaling());
+let maand3 = document.getElementById("3maand");
+let maand6 = document.getElementById("6maand");
+let maand12 = document.getElementById("12maand");
+
+maand3.addEventListener("click", () => laadBetaling(gekozenPakket, 3));
+maand6.addEventListener("click", () => laadBetaling(gekozenPakket, 6));
+maand12.addEventListener("click", () => laadBetaling(gekozenPakket, 12));
+
+let paypal = document.getElementById("svg_paypal");
+let visa = document.getElementById("svg_visa");
+let mastercard = document.getElementById("svg_mastercard");
+
+paypal.addEventListener("click", () => betalingswijze("paypal"))
+visa.addEventListener("click", () => betalingswijze("visa"))
+mastercard.addEventListener("click", () => betalingswijze("mastercard"))
+
+document.getElementById("pakketten__betaling_terug").addEventListener("click", () => returnPakketten());
+document.getElementById("pakketten__betaling_einde").addEventListener("click", () => vervoledigBetaling());

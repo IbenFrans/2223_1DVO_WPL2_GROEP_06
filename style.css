@@ -232,7 +232,6 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     background-color: #97CAD0;
     border-radius: 20px;
     color: #FFFFFF;
-<<<<<<< HEAD
 }
 
 
@@ -335,10 +334,6 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     font-weight: bold;
 }
 
-rbbrbrbrbr
-
-
-
 .c-item {
     height: 300px;
 }
@@ -349,22 +344,6 @@ rbbrbrbrbr
     filter: brightness(0.6);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-    cursor: pointer;
-}
 main .nieuwsartikel a{
     color: #000000;
     text-decoration: none;
@@ -375,8 +354,6 @@ main .nieuwsartikel:hover{
 nav{
     background-color: #ffffff;
 }
-<<<<<<< Updated upstream
-=======
 /* Contact pagina */
 #body-contact{
     background-color: #2F3953;
@@ -449,4 +426,3 @@ footer{
         overflow: hidden;
     }
 }
->>>>>>> bb99877a7cf58b0c970db23046a1d6a4ac4dbc89
