@@ -207,6 +207,11 @@ div#cirkelSocials{
 /*    left: 50rem;*/
 /*}*/
 
+.instagrambericht{
+    display: flex;
+    justify-content:space-evenly;
+}
+
 /* Nieuws pagina */
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
