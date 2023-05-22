@@ -223,7 +223,7 @@ main #nieuws__categorie li{
     padding: 0.5rem;
 }
 main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
-    background-color: #6c757d;
+    background-color: #97CAD0;
     border-radius: 20px;
     color: #FFFFFF;
     cursor: pointer;
@@ -233,7 +233,7 @@ main .nieuwsartikel a{
     text-decoration: none;
 }
 main .nieuwsartikel:hover{
-    background-color: #CAC8C8;
+    background-color: #97CAD0;
 }
 nav{
     background-color: #ffffff;
