@@ -18,3 +18,131 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     border-radius: 20px;
     color: #FFFFFF;
 }
+
+
+
+
+
+
+.article-block {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    position: relative;
+    height: 150%;
+}
+.article-block a {
+    display: block;
+    text-align: center;
+}
+
+
+
+.article-block:hover {
+    background-color: #97CAD0;
+    transform: scale(1.05);
+}
+
+.article-title {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+.article-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #97CAD0;
+    z-index: -1;
+}
+.article-link{
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+
+
+
+.overons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overons-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.overons-text {
+    text-align: center;
+}
+
+.overons-title {
+    font-weight: bold;
+}
+
+
+.overons-banner {
+    position: relative;
+    width: 100%;
+    height: 820px;
+}
+
+.overons-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overons-text-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.overons-text-overlay p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+rbbrbrbrbr
+
+
+
+.c-item {
+    height: 300px;
+}
+
+.c-img {
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
