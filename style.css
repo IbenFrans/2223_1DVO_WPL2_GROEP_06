@@ -46,6 +46,7 @@ nav{
     transition: transform 0.5s ease-in-out;
 }
 
+
 #navbarlist li a:hover::before, #hamburgerMenu ul li a:hover::before {
     transform: scaleX(1);
     transform-origin: left;
@@ -285,6 +286,16 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
 }
 
 /* over ons */
+
+.c-item {
+    height: 300px;
+}
+
+.c-img {
+    height: 80%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
 
 .overons-container {
     display: flex;
