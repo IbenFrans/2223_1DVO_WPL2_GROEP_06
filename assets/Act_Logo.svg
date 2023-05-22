@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 154 214.7">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 9.99px;
+      }
+
+      .cls-5 {
+        fill: #1d1d1b;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" y="0" width="154" height="214.7"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-3" y="0" width="154" height="214.71"/>
+    </clipPath>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <g id="Artwork_5" data-name="Artwork 5">
+      <g class="cls-2">
+        <g class="cls-1">
+          <path class="cls-4" d="M76.85,5h0c39.69,0,71.86,32.17,71.86,71.86V207.75S4.99,236.11,4.99,76.85C4.99,32.96,37.17,5,76.85,5Z"/>
+          <path class="cls-4" d="M149,77.49c0,39.66-32.15,71.81-71.81,71.81S5.38,117.14,5.38,77.49,37.53,5.68,77.2,5.68s71.81,32.15,71.81,71.81Z"/>
+          <path class="cls-4" d="M151.43,206.2s-42.2,5.74-40.91-65.1"/>
+          <path class="cls-4" d="M30.6,20.49s50.14,1.98,50.14,61.41c0-61.41,44.82-57.87,44.82-57.87"/>
+          <path class="cls-5" d="M49.91,66.29c0,4.46-3.62,8.08-8.08,8.08s-8.08-3.62-8.08-8.08,3.62-8.08,8.08-8.08,8.08,3.62,8.08,8.08"/>
+          <circle class="cls-4" cx="41.82" cy="66.29" r="8.08"/>
+          <path class="cls-5" d="M124.1,66.29c0,4.46-3.62,8.08-8.08,8.08s-8.08-3.62-8.08-8.08,3.62-8.08,8.08-8.08,8.08,3.62,8.08,8.08"/>
+          <circle class="cls-4" cx="116.01" cy="66.29" r="8.08"/>
+          <path class="cls-4" d="M47.46,185.97s26.55-5.16,16.45-37.91"/>
+          <path class="cls-4" d="M63.05,174.61c22.39-19.52,53.17,1.9,53.17,1.9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
