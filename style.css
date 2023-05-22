@@ -374,6 +374,24 @@ main .nieuwsartikel:hover{
 nav{
     background-color: #ffffff;
 }
+<<<<<<< Updated upstream
+=======
+/* Contact pagina */
+#body-contact{
+    background-color: #2F3953;
+}
+.contactpagina{
+    background-color: #2F3953;
+}
+.text-contact{
+    color: #FFFFFF;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.form-check{
+    color:#FFFFFF;;
+}
+>>>>>>> Stashed changes
 
 /* Footer */
 footer{
