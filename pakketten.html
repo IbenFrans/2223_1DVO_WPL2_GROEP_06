@@ -10,99 +10,6 @@
     <script defer src="hamburger.js"></script>
     <script defer src="pakketten.js"></script>
 </head>
-
-
-<style>
-    #pakketten{
-        margin-bottom: 15rem;
-    }
-    .article-block {
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        transform: scale(1);
-        position: relative;
-        height: 125%;
-        border: 1px solid #97CAD0;
-    }
-
-    .article-block a {
-        display: block;
-        text-align: center;
-    }
-
-
-    .article-block:hover {
-        background-color: #97CAD0;
-        transform: scale(1.05);
-        cursor: pointer;
-    }
-
-    .article-title {
-        text-align: center;
-        margin-bottom: 10px;
-        position: relative;
-        z-index: 1;
-        font-weight: bold;
-        font-size: 3.2rem;
-    }
-
-    .article-title::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 50%;
-        height: 3px;
-        background-color: #97CAD0;
-        z-index: -1;
-    }
-
-    .article-link {
-        vertical-align: bottom;
-        display: table-cell;
-    }
-
-    #paketten__volgendeStap {
-        margin-top: 10rem;
-        display: none;
-    }
-
-    #pakketten__betaling{
-        display: none;
-    }
-
-    .pakketten_buttons {
-        background-color: #ffffff;
-        border: 1px solid #97CAD0;
-        color: #2F3953;
-        margin-top: 5rem;
-    }
-
-    .pakketten_buttons:hover {
-        background-color: #97CAD0;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-    }
-    #betalingswijze svg{
-        width: 8rem;
-        padding: 2rem;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-    }
-    #betalingswijze svg:hover{
-        background-color: #97CAD0;
-        transform: scale(1.05);
-    }
-    #betalingswijze .selectedSvg{
-        transform: scale(1.05);
-    }
-
-</style>
-
-
 <body>
 <!--Navigatie-->
 <nav class="container-fluid">
@@ -151,8 +58,7 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-6 d-flex flex-column justify-content-center">
-                <h1 class="text-center display-4">Pakketten</h1>
-
+                <h1 id="pakketten__hoofdtitel" class="text-center display-4">Pakketten</h1>
             </div>
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <img src="assets/actcirkel.png" alt="Image" class="img-fluid" style="max-width: 100%;">
@@ -160,12 +66,12 @@
         </div>
     </div>
 
-
+    <!-- Aanbod -->
     <div class="container" id="pakketten__aanbod">
         <div class="row">
             <div class="col-md-4 my-5">
                 <div class="article-block p-5" id="basicPakket">
-                    <h2 class="article-title"> Basic</h2>
+                    <h2 class="article-title mb-4"> Basic</h2>
                     <p>Dit pakket omvat essentiële juridische diensten zoals documentbeoordeling, contractopstelling en
                         basis juridisch advies. Het is een kosteneffectieve optie voor particulieren of bedrijven die af
                         en toe juridische ondersteuning nodig hebben, maar geen uitgebreide juridische
@@ -173,18 +79,18 @@
                     <a class="article-link">Ga verder met Basic ></a>
                 </div>
             </div>
-            <div class="col-md-4 my-5">
+            <div class="col-md-4 mt-5">
                 <div class="article-block p-5" id="fullPakket">
-                    <h2 class="article-title">Full</h2>
+                    <h2 class="article-title mb-4">Full</h2>
                     <p>Dit pakket omvat uitgebreidere juridische diensten zoals ondersteuning bij geschillen,
                         onderhandeling en gevorderd juridisch advies. Het is ideaal voor cliënten die vaker juridische
                         ondersteuning nodig hebben en betrokken zijn bij complexe juridische kwesties.</p>
                     <a class="article-link">Ga verder met Full ></a>
                 </div>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 my-5">
                 <div class="article-block p-5" id="proPakket">
-                    <h2 class="article-title">Pro</h2>
+                    <h2 class="article-title mb-4">Pro</h2>
                     <p>Dit pakket omvat alle diensten die worden aangeboden in de Basic en Pro pakketten, plus extra
                         voordelen zoals toegang tot een toegewijd juridisch team, prioriteitsservice en gereduceerde
                         tarieven voor aanvullende juridische diensten. Het is ontworpen voor cliënten die uitgebreide
@@ -195,6 +101,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Volgende Stap -->
     <div class="container mb-5" id="paketten__volgendeStap">
         <div class="row">
             <div class="col p-4">
@@ -213,7 +121,7 @@
                     <a class="article-link">Ga verder met 3 Maand ></a>
                 </div>
             </div>
-            <div class="col-md-4 my-5">
+            <div class="col-md-4 mt-5">
                 <div class="article-block p-5" id="6maand">
                     <h2 class="article-title">6 Maand</h2>
                     <h4 class="d-flex justify-content-center mb-4">€<span id="prijs_6maand"></span> / maand</h4>
@@ -221,7 +129,7 @@
                     <a class="article-link">Ga verder met 6 maanden ></a>
                 </div>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 my-5">
                 <div class="article-block p-5" id="12maand">
                     <h2 class="article-title">12 Maand</h2>
                     <h4 class="d-flex justify-content-center mb-4">€<span id="prijs_12maand"></span> / maand</h4>
@@ -231,6 +139,9 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Betaling -->
     <div class="container mt-4" id="pakketten__betaling">
         <div class="row d-flex justify-content-center my-4">
             <h2 class="col article text-center">Checkout</h2>
@@ -244,6 +155,7 @@
             </div>
             <div class="col-md-4">
                 <h4>Uw informatie</h4>
+                <div class="alert alert-danger" id="errorMess" role="alert"></div>
                 <label>Email</label>
                 <div class="input-group mb-3">
                     <input id="pakketten__checkout__email" type="text" class="form-control" placeholder="voorbeeld@mail.com" aria-label="email"
@@ -348,6 +260,14 @@
             <button type="button" class="col-4 btn btn-primary text-center pakketten_buttons" id="pakketten__betaling_einde"> Betaal nu
             </button>
         </div>
+    </div>
+
+    <!-- Confirmatie -->
+    <div class="container mt-4" id="pakketten__confirmatie">
+        <h2>U heeft het <span id="confirmatie__pakket" class="confirmatie__kleur"></span> gekocht!</h2>
+        <h3 class="mb-5">Danku om lid van de familie te worden!</h3>
+        <h3 class="my-5">Het totale bedrag was <span id="confirmatie__prijs" class="confirmatie__kleur"></span></h3>
+        <p>Er zal een mail worden gestuurd naar <span id="confirmatie_mail" class="confirmatie__kleur"></span> over de betaling met <span id="confirmatie_betaling" class="confirmatie__kleur"></span></p>
     </div>
 
 </main>

@@ -139,7 +139,43 @@ function returnPakketten(){
 
 function vervoledigBetaling(){
     let email = document.getElementById("pakketten__checkout__email").value;
-    alert("Pakket: " + gekozenPakket + "\nMaanden: " + gekozenMaand + "\nBetaling: " + gekozenBetaling + "\nEmail: " + email + "\nTotaal: €" + gekozenTotaalPrijs);
+
+    if(email == "" || gekozenBetaling == ""){
+        let errorMess = "Vul alle velden in aub";
+        document.getElementById("errorMess").style.display = "block";
+        document.getElementById("errorMess").innerText = errorMess;
+        document.getElementById("pakketten__checkout__email").style.borderColor = "red";
+        document.getElementById("betalingswijze").style.border = "1px solid red";
+        document.getElementById("betalingswijze").style.borderColor = "red";
+        document.getElementById("betalingswijze").style.borderRadius = "10px";
+        document.getElementById("betalingswijze").style.padding = "0.5rem";
+
+    } else{
+        let hoofdtitel = document.getElementById("pakketten__hoofdtitel");
+        let checkmark = document.createElement("img");
+        checkmark.src = "assets/checkmark.png";
+        checkmark.alt = "groene checkmark";
+        checkmark.style.width = "4rem";
+
+        hoofdtitel.innerHTML = "Bedankt! ";
+        hoofdtitel.appendChild(checkmark);
+
+        document.getElementById("pakketten__betaling").style.display = "none";
+        document.getElementById("pakketten__confirmatie").style.display = "block";
+
+        document.getElementById("confirmatie__pakket").innerText = gekozenPakket.toUpperCase() + " PAKKET voor " + gekozenMaand + " maanden";
+        document.getElementById("confirmatie__prijs").innerText = "€" + gekozenTotaalPrijs;
+        document.getElementById("confirmatie_mail").innerText = email;
+        document.getElementById("confirmatie_mail").style.fontWeight = "bold";
+        document.getElementById("confirmatie_betaling").innerText = gekozenBetaling;
+        document.getElementById("confirmatie_betaling").style.fontWeight = "bold";
+
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
 }
 
 basic.addEventListener("click", () => laadVolgendeStap("basic"));
@@ -164,3 +200,4 @@ mastercard.addEventListener("click", () => betalingswijze("mastercard"))
 
 document.getElementById("pakketten__betaling_terug").addEventListener("click", () => returnPakketten());
 document.getElementById("pakketten__betaling_einde").addEventListener("click", () => vervoledigBetaling());
+
