@@ -232,6 +232,7 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     background-color: #97CAD0;
     border-radius: 20px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -335,7 +336,7 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
 }
 
 .c-item {
-    height: 300px;
+    height: 500px;
 }
 
 .c-img {
@@ -374,6 +375,101 @@ nav{
 /* pakketten */
 #pakketten{
     margin-bottom: 10rem;
+}
+
+#pakketten{
+    margin-bottom: 15rem;
+}
+.article-block {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    position: relative;
+    height: 125%;
+    border: 1px solid #97CAD0;
+}
+
+.article-block a {
+    display: block;
+    text-align: center;
+}
+
+
+.article-block:hover {
+    background-color: #97CAD0;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.article-title {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+.article-link {
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+#paketten__volgendeStap {
+    margin-top: 10rem;
+    display: none;
+}
+
+#pakketten__betaling{
+    display: none;
+}
+
+#errorMess{
+    display: none;
+}
+
+.pakketten_buttons {
+    background-color: #ffffff;
+    border: 1px solid #97CAD0;
+    color: #2F3953;
+    margin-top: 5rem;
+}
+
+.pakketten_buttons:hover {
+    background-color: #97CAD0;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#pakketten__betaling_einde{
+    background-color: #97CAD0;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all 0.3s ease;
+}
+#pakketten__betaling_einde:hover{
+    transform: scale(1.05);
+}
+
+#betalingswijze svg{
+    width: 8rem;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#betalingswijze svg:hover{
+    background-color: #97CAD0;
+    transform: scale(1.05);
+}
+#betalingswijze .selectedSvg{
+    transform: scale(1.05);
+}
+#pakketten__confirmatie{
+    display: none;
+}
+
+.confirmatie__kleur{
+    color: #97CAD0;
 }
 /* Contact pagina */
 #body-contact{
