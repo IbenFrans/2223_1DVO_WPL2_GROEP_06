@@ -6,6 +6,7 @@
 }
 main{
     margin-top: 7rem;
+
 }
 /* navbar */
 nav{
@@ -237,6 +238,11 @@ main .nieuwsartikel:hover{
 }
 nav{
     background-color: #ffffff;
+}
+
+/* pakketten */
+#pakketten{
+    margin-bottom: 10rem;
 }
 
 /* Footer */
