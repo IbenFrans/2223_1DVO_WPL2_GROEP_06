@@ -15,7 +15,14 @@
         transition: all 0.3s ease;
         transform: scale(1);
         position: relative;
+        height: 150%;
     }
+    .article-block a {
+        display: block;
+        text-align: center;
+    }
+
+
 
     .article-block:hover {
         background-color: #97CAD0;
@@ -27,6 +34,8 @@
         margin-bottom: 10px;
         position: relative;
         z-index: 1;
+        font-weight: bold;
+        font-size: 3.2rem;
     }
 
     .article-title::after {
@@ -41,6 +50,11 @@
         background-color: #97CAD0;
         z-index: -1;
     }
+    .article-link{
+        vertical-align: bottom;
+        display: table-cell;
+    }
+
 </style>
 
 
@@ -68,7 +82,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h1 class="text-center display-4">Title</h1>
+            <h1 class="text-center display-4">Pakketten</h1>
 
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -82,28 +96,34 @@
 <br>
 
 
+
 <div class="container">
     <div class="row">
         <div class="col-md-4">
             <div class="article-block">
-                <h2 class="article-title">Article 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor enim sed ipsum dapibus, quis porttitor ex ultrices. Fusce in ante id elit tristique blandit. Suspendisse sed faucibus lectus.</p>
+                <h2 class="article-title"> Basic</h2>
+                <p>Dit pakket omvat essentiële juridische diensten zoals documentbeoordeling, contractopstelling en basis juridisch advies. Het is een kosteneffectieve optie voor particulieren of bedrijven die af en toe juridische ondersteuning nodig hebben, maar geen uitgebreide juridische vertegenwoordiging nodig hebben.</p>
+                <a class="article-link">Ga verder met Basic ></a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="article-block">
-                <h2 class="article-title">Article 2</h2>
-                <p>Phasellus auctor, metus sit amet dictum rutrum, felis nunc volutpat mauris, quis dignissim enim massa vel mauris. Sed aliquam consequat massa, quis dictum nunc rhoncus eu.</p>
+                <h2 class="article-title">Full</h2>
+                <p>Dit pakket omvat uitgebreidere juridische diensten zoals ondersteuning bij geschillen, onderhandeling en gevorderd juridisch advies. Het is ideaal voor cliënten die vaker juridische ondersteuning nodig hebben en betrokken zijn bij complexe juridische kwesties.</p>
+                <a class="article-link">Ga verder met Full ></a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="article-block">
-                <h2 class="article-title">Article 3</h2>
-                <p>Mauris id nisl ac ex dictum faucibus. Curabitur blandit dolor vitae ex facilisis, eget suscipit justo venenatis. Vivamus rhoncus, velit ut porttitor malesuada, nulla metus aliquet sapien, eu interdum nisl turpis vitae metus.</p>
+                <h2 class="article-title">Pro</h2>
+                <p>Dit pakket omvat alle diensten die worden aangeboden in de Basic en Pro pakketten, plus extra voordelen zoals toegang tot een toegewijd juridisch team, prioriteitsservice en gereduceerde tarieven voor aanvullende juridische diensten. Het is ontworpen voor cliënten die uitgebreide juridische ondersteuning nodig hebben en gemoedsrust willen hebben door te weten dat hun juridische behoeften volledig worden gedekt.</p>
+                <a class="article-link">Ga verder met Pro ></a>
             </div>
         </div>
     </div>
 </div>
+
+
 
 
 
