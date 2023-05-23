@@ -149,12 +149,15 @@ div#cirkelSocials{
     margin: 0.5rem 0;
     transition: all .2s ease-in-out;
 }
-#socials ul li a svg:hover{
-    transform: scale(1.2);
+
+.socialIconStroke{
+    stroke: #2F3953;
 }
-#socials ul li a svg:hover{
+#socials ul li:hover{
+    transform: scale(1.2);
     fill: #ffffff;
 }
+
 #socials ul li a svg#facebook{
     width: 3.5rem;
     margin-bottom: -5px;
@@ -172,10 +175,15 @@ div#cirkelSocials{
     font-size: 4rem;
     color: #97CAD0;
 }
-.expertiseSvg{
-    fill: white;
+.expertiseTexts{
+    color: #2F3953;
+}
+
+.expertiseSvg path, .expertiseSvg rect, .expertiseSvg line{
+    stroke: #2F3953;
 }
 .expertiseBlock{
+    border-radius: 10px;
     max-width: 70%;
     background-position: center;
     background-size: cover;
@@ -195,8 +203,11 @@ div#cirkelSocials{
     background-image: url("assets/fusies_overnames.png");
 }
 .expertiseTexts{
+    border-radius: 10px;
     padding: 2rem;
+    background-color: #ffffff90;
     backdrop-filter: blur(25px);
+
 }
 /*.circle{*/
 /*    width: 15rem;*/
@@ -221,6 +232,7 @@ div#cirkelSocials{
 .instagrambericht{
     display: flex;
     justify-content:space-evenly;
+    margin-bottom: 5rem;
 }
 
 /* Nieuws pagina */
@@ -243,6 +255,29 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     border-radius: 20px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+main .nieuwsartikel a{
+    color: #000000;
+    text-decoration: none;
+}
+main .nieuwsartikel{
+    transition: all .2s ease-in-out;
+}
+main .nieuwsartikel:hover{
+    transform: scale(1.025);
+    background-color: #97CAD0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+main .nieuwsartikel h6, #detail__titel{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+#nieuws__breadcrumb{
+    font-weight: bold;
 }
 
 
@@ -422,14 +457,6 @@ main #nieuws__categorie #activeCat, main #nieuws__categorie li:hover{
     object-fit: cover;
     filter: brightness(0.6);
 }
-
-main .nieuwsartikel a{
-    color: #000000;
-    text-decoration: none;
-}
-main .nieuwsartikel:hover{
-    background-color: #97CAD0;
-}
 nav{
     background-color: #ffffff;
 }
@@ -448,7 +475,7 @@ nav{
 .form-check{
     color:#FFFFFF;;
 }
->>>>>>> Stashed changes
+
 
 /* pakketten */
 #pakketten{
@@ -463,7 +490,7 @@ nav{
     transition: all 0.3s ease;
     transform: scale(1);
     position: relative;
-    height: 125%;
+    height: 100%;
     border: 1px solid #97CAD0;
 }
 
@@ -518,6 +545,12 @@ nav{
     color: #ffffff;
     border: 1px solid #ffffff;
 }
+#pakket__betaling__div{
+    background-color: #97CAD0;
+    padding: 4rem;
+    border-radius: 10px;
+}
+
 #pakketten__betaling_einde{
     background-color: #97CAD0;
     color: #ffffff;
@@ -668,7 +701,7 @@ footer{
     font-size: 0.7rem;
 }
 /* Media Query Responsive */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1080px) {
     #navbarlist li a{
         display: none;
     }
@@ -679,6 +712,12 @@ footer{
     #hamburgerResponsive{
         display: block;
     }
+    .instagrambericht{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 780px) {
     #indexPagina{
         height: calc(100vh);
     }
@@ -692,12 +731,16 @@ footer{
     #indexPagina main #cover div h1{
         font-size: 7rem;
     }
+    #socials-contact{
+        display: none ;
+    }
 
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1080px) {
     #hamburgerMenu{
         position: absolute;
         top: -30rem;
         overflow: hidden;
     }
 }
+
