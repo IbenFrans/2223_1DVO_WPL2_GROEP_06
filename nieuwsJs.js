@@ -9,8 +9,8 @@ let artikels = [
             alt: "fusies/overnames"
         },
             {
-                naam: "Screen-Shot-2019-11-20-at-12.27.46-AM.png",
-                alt: "texheaven"
+                naam: "ecommerce.png",
+                alt: "ecommerce"
             }],
         text: [
             "De afgelopen jaren is er een toenemende vraag naar meer bescherming van ondernemingsrechten, met name voor bedrijven en investeerders. Dit heeft geleid tot nieuwe wetgeving die gericht is op het versterken van deze rechten en het bieden van meer bescherming voor bedrijven en investeerders. Deze nieuwe wetgeving belooft een nieuwe era van vertrouwen en stabiliteit voor het bedrijfsleven, en kan de groei van de economie stimuleren door investeerders aan te trekken en bedrijven in staat te stellen hun activiteiten uit te breiden.",
@@ -73,7 +73,7 @@ let artikels = [
             alt: "druk op advocaten"
         },
             {
-                naam: "schilderij.jpg",
+                naam: "Schilderij.jpg",
                 alt: "schilderij"
             }],
         text: [
@@ -187,9 +187,9 @@ function maakNieuwsLijst(lijst){
 
     for (let i = 0; i<lijst.length; i++){
         if(i == 0 || i == 5){
-            col = "col-xl-8 ";
+            col = "col-xl-8 p-3 ";
         } else{
-            col = "col-xl-4 col-md-6 ";
+            col = "col-xl-4 col-md-6 p-3 ";
         }
         let artikel = lijst[i];
         createNieuwsArtikel(artikel.titel, artikel.subtext, artikel.hoofdfoto, "artikel" + i, artikel.type, col);

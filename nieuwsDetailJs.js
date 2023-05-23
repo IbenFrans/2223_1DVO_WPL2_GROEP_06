@@ -36,4 +36,9 @@ text2.innerHTML = "";
 voegTextToe("detail__text2", artikel.text[2]);
 voegTextToe("detail__text2", artikel.text[3]);
 voegTextToe("detail__text2", artikel.text[4]);
-voegTextToe("detail__text2", "Source: https://www.advocaat.be/nl")
+
+let source = document.createElement("a");
+source.href = "https://www.advocaat.be/nl";
+source.target = "_blank";
+source.innerText = "Source: https://www.advocaat.be/nl";
+document.getElementById("detail__text2").appendChild(source);

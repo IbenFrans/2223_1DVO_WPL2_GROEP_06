@@ -70,7 +70,7 @@
     <!-- Aanbod -->
     <div class="container" id="pakketten__aanbod">
         <div class="row">
-            <div class="col-md-4 my-5">
+            <div class="col-lg-4 my-5">
                 <div class="article-block p-5" id="basicPakket">
                     <h2 class="article-title mb-4"> Basic</h2>
                     <p>Dit pakket omvat essentiële juridische diensten zoals documentbeoordeling, contractopstelling en
@@ -80,7 +80,7 @@
                     <a class="article-link">Ga verder met Basic ></a>
                 </div>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-lg-4 mt-5">
                 <div class="article-block p-5" id="fullPakket">
                     <h2 class="article-title mb-4">Full</h2>
                     <p>Dit pakket omvat uitgebreidere juridische diensten zoals ondersteuning bij geschillen,
@@ -89,7 +89,7 @@
                     <a class="article-link">Ga verder met Full ></a>
                 </div>
             </div>
-            <div class="col-md-4 my-5">
+            <div class="col-lg-4 my-5">
                 <div class="article-block p-5" id="proPakket">
                     <h2 class="article-title mb-4">Pro</h2>
                     <p>Dit pakket omvat alle diensten die worden aangeboden in de Basic en Pro pakketten, plus extra
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 my-5">
+            <div class="col-lg-4 my-5">
                 <div class="article-block p-5" id="3maand">
                     <h2 class="article-title">3 Maand</h2>
                     <h4 class="d-flex justify-content-center mb-4">€<span id="prijs_3maand"></span> / maand</h4>
@@ -122,7 +122,7 @@
                     <a class="article-link">Ga verder met 3 Maand ></a>
                 </div>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-lg-4 mt-5">
                 <div class="article-block p-5" id="6maand">
                     <h2 class="article-title">6 Maand</h2>
                     <h4 class="d-flex justify-content-center mb-4">€<span id="prijs_6maand"></span> / maand</h4>
@@ -130,7 +130,7 @@
                     <a class="article-link">Ga verder met 6 maanden ></a>
                 </div>
             </div>
-            <div class="col-md-4 my-5">
+            <div class="col-lg-4 my-5">
                 <div class="article-block p-5" id="12maand">
                     <h2 class="article-title">12 Maand</h2>
                     <h4 class="d-flex justify-content-center mb-4">€<span id="prijs_12maand"></span> / maand</h4>
@@ -148,7 +148,7 @@
             <h2 class="col article text-center">Checkout</h2>
         </div>
         <div class="row my-4 d-flex justify-content-evenly">
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mb-5" id="pakket__betaling__div">
                 <h2><span id="pakket_betaling"></span> PAKKET</h2>
                 <p>voor <span id="pakket_betaling_maanden"></span> maanden heeft u dit pakket gekozen</p>
                 <p class="my-4">Totaal bedrag: <span id="pakket_betaling_totaal"></span></p>
@@ -274,6 +274,7 @@
 </main>
 
 <!-- footer -->
+<!-- footer -->
 <div class="container d-flex justify-content-center">
     <footer class="pt-2 px-5">
         <div class="row">
@@ -281,45 +282,13 @@
                 <h5>Check onze App</h5>
                 <div class="row"/>
                 <a href="#" class="col-3 footerlogo">
-                    <svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                        <title>apple [#173]</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-
-                        </defs>
-                        <g id="Page-1">
-                            <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485"
-                                          id="apple-[#173]">
-
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 26.880859 42 A 1.50015 1.50015 0 1 0 26.880859 39 L 13.5 39 C 10.996501 39 9 37.003499 9 34.5 L 9 13.5 C 9 10.996501 10.996501 9 13.5 9 A 1.50015 1.50015 0 1 0 13.5 6 z M 18.511719 6 A 1.50015 1.50015 0 1 0 18.511719 9 L 34.5 9 C 37.003499 9 39 10.996501 39 13.5 L 39 34.5 C 39 37.003499 37.003499 39 34.5 39 L 32.744141 39 A 1.50015 1.50015 0 1 0 32.744141 42 L 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 18.511719 6 z M 21.386719 11.794922 C 21.09791 11.774824 20.799297 11.836484 20.529297 11.990234 C 19.809297 12.410234 19.570469 13.319062 19.980469 14.039062 L 22.267578 18 L 17.074219 27 L 12.5 27 C 11.67 27 11 27.67 11 28.5 C 11 29.33 11.67 30 12.5 30 L 26.880859 30 L 25.160156 27 L 20.535156 27 L 28.019531 14.039062 C 28.429531 13.319062 28.190703 12.410234 27.470703 11.990234 C 26.750703 11.580234 25.829922 11.819063 25.419922 12.539062 L 24 15.001953 L 22.580078 12.539062 C 22.323828 12.089062 21.868066 11.828418 21.386719 11.794922 z M 26.890625 20 L 25.160156 23 L 31.480469 33.960938 C 31.760469 34.440937 32.259297 34.710938 32.779297 34.710938 C 33.039297 34.710938 33.289297 34.639766 33.529297 34.509766 C 34.249297 34.089766 34.490078 33.180938 34.080078 32.460938 L 32.660156 30 L 35.5 30 C 36.33 30 37 29.33 37 28.5 C 37 27.67 36.33 27 35.5 27 L 30.929688 27 L 26.890625 20 z M 14.189453 32 L 13.919922 32.460938 C 13.509922 33.180937 13.750703 34.089766 14.470703 34.509766 C 14.710703 34.639766 14.960703 34.710938 15.220703 34.710938 C 15.740703 34.710938 16.239531 34.440937 16.519531 33.960938 L 17.650391 32 L 14.189453 32 z"></path>
                     </svg>
                 </a>
                 <a href="#" class="col-3 offset-2 footerlogo">
-                    <svg viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                        <title>google_play [#133]</title>
-                        <desc>Created with Sketch.</desc>
-                        <defs>
-
-                        </defs>
-                        <g id="Page-1">
-                            <g id="Dribbble-Light-Preview" transform="translate(-101.000000, -7599.000000)">
-                                <g id="icons" transform="translate(56.000000, 160.000000)">
-                                    <path d="M45,7458.928 L45,7459 L53.5,7454 L56.5956547,7452.185 L54.1323291,7449.705 L45,7458.928 Z M57.4515643,7446.334 L54.8020857,7449 L57.4515643,7451.667 L62,7449 L57.4515643,7446.334 Z M56.5670915,7445.816 L53.5,7444 L45,7439 L45,7439.072 L54.1323291,7448.296 L56.5670915,7445.816 Z M53.469467,7448.967 L45,7457.517 L45,7449 L45,7440.423 L53.469467,7448.967 Z"
-                                          id="google_play-[#133]">
-
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M 11.359375 4.046875 C 9.0795744 4.1547914 7 6.0229048 7 8.5273438 L 7 14.722656 A 1.50015 1.50015 0 1 0 10 14.722656 L 10 8.5273438 C 10 7.3245955 11.153323 6.6358778 12.210938 7.2070312 L 31.367188 17.541016 L 26.953125 21.892578 L 15.986328 11.082031 A 1.50015 1.50015 0 1 0 13.880859 13.21875 L 24.816406 24 L 13.259766 35.392578 A 1.50015 1.50015 0 1 0 15.365234 37.529297 L 26.953125 26.107422 L 31.367188 30.458984 L 25.716797 33.507812 A 1.50015 1.50015 0 1 0 27.140625 36.148438 L 42.644531 27.785156 C 45.583356 26.199599 45.583356 21.802354 42.644531 20.216797 L 13.636719 4.5664062 C 12.902122 4.1696946 12.119309 4.0109029 11.359375 4.046875 z M 34.130859 19.03125 L 41.220703 22.855469 C 42.203878 23.385912 42.203878 24.614088 41.220703 25.144531 L 34.130859 28.96875 L 29.089844 24 L 34.130859 19.03125 z M 8.4765625 20.478516 A 1.50015 1.50015 0 0 0 7 22 L 7 39.472656 C 7 42.811908 10.698497 45.018881 13.636719 43.433594 L 22.076172 38.880859 A 1.50015 1.50015 0 1 0 20.652344 36.240234 L 12.210938 40.792969 C 11.153159 41.363682 10 40.675404 10 39.472656 L 10 22 A 1.50015 1.50015 0 0 0 8.4765625 20.478516 z"></path>
                     </svg>
                 </a>
 
