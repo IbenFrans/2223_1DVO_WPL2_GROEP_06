@@ -637,17 +637,8 @@ h4{
 #socials-contact ul li a svg:hover{
     transform: scale(1.2);
 }
-#socials-contact ul li a svg:hover{
-    fill: #ffffff;
-}
-#socials-contact ul li a svg#facebook{
-    width: 3.5rem;
-    margin-bottom: -5px;
-    margin-left: -4px;
-}
-#socials-contact ul li a svg#twitter{
-    width: 2.5rem;
-    margin-left: 5px;
+#socials-contact .socialIconStroke{
+    stroke: #ffffff;
 }
 .button{
     transition-duration: 0.4s;
