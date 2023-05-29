@@ -110,18 +110,15 @@ nav{
     position: absolute;
     bottom: 0;
 }
-#indexPagina main #cover div{
-    color: #2F3953;
+.indexImg{
+    width: 100%;
+}
+#indexText{
+    background-color: #FFFFFF80;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
     font-weight: bold;
-}
-#indexPagina main #cover div h1{
-    font-size: 10rem;
-}
-#indexHero{
-    border-radius: 20px;
-    background-color: #ffffff95;
-    backdrop-filter: blur(35px);
-    -webkit-backdrop-filter: blur(35px);
 }
 
 div#cirkelSocials{
@@ -343,12 +340,7 @@ main .nieuwsartikel h6, #detail__titel{
 }
 
 .overons-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-    margin-right: 100px;
+    margin-bottom: 10rem;
 }
 .overons-container2 {
     display: flex;
@@ -376,14 +368,11 @@ main .nieuwsartikel h6, #detail__titel{
     max-width: 500px;
 }
 
-.overons-image-container img {
-    max-width: 500px;
-    max-height: 550px;
+.overons-image-container img{
+    width: 100%;
 }
-.overons-image-container2 img {
-    max-width: 500px;
-    max-height: 550px;
-}
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -438,7 +427,7 @@ main .nieuwsartikel h6, #detail__titel{
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 20px;
+    padding: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
@@ -672,6 +661,10 @@ h4{
 }
 
 /* Footer */
+.footerContainer{
+   width: 100%;
+    background-color: #FFFFFF;
+}
 footer{
     overflow: hidden;
     background-color: #FFFFFF;
