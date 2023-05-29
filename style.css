@@ -113,7 +113,9 @@ nav{
 .indexImg{
     width: 100%;
 }
-#indexText{
+#indexText h3{
+    padding: 1rem 3rem;
+    display: inline-block;
     background-color: #FFFFFF80;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -170,14 +172,9 @@ div#cirkelSocials{
     text-align: center;
     padding: 10rem 5rem;
     font-size: 4rem;
-    color: #97CAD0;
 }
-.expertiseTexts{
-    color: #2F3953;
-}
-
 .expertiseSvg path, .expertiseSvg rect, .expertiseSvg line{
-    stroke: #2F3953;
+    stroke: #000000;
 }
 .expertiseBlock{
     border-radius: 10px;
@@ -233,6 +230,9 @@ div#cirkelSocials{
 }
 
 /* Nieuws pagina */
+#nieuws__titel{
+    font-size: 4rem;
+}
 main ul#nieuws__categorie{
     border: 1px solid #6c757d;
     border-radius: 20px;
@@ -328,15 +328,13 @@ main .nieuwsartikel h6, #detail__titel{
 }
 
 /* over ons */
-
-.c-item {
-    height: 650px;
+#carouselOverOns{
+    width: 500px;
+    border-radius: 10px;
 }
 
-.c-img {
-    height: 80%;
-    object-fit: cover;
-    filter: brightness(0.6);
+.carousel-item img{
+    border-radius: 10px;
 }
 
 .overons-container {
@@ -355,7 +353,7 @@ main .nieuwsartikel h6, #detail__titel{
 
 
 .overons-title {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
@@ -433,8 +431,8 @@ main .nieuwsartikel h6, #detail__titel{
 }
 
 .overons-text-overlay p {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 40px;
+
 }
 
 .c-item {
@@ -507,6 +505,9 @@ nav{
 .article-link {
     vertical-align: bottom;
     display: table-cell;
+}
+#basicPakket ul li, #fullPakket ul li, #proPakket ul li{
+    list-style-type: circle;
 }
 
 #paketten__volgendeStap {
