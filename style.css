@@ -190,6 +190,13 @@ div#cirkelSocials{
     margin-bottom: 4rem;
     transition: all .2s ease-in-out;
 }
+
+@media screen and (max-width: 760px) {
+    .expertiseBlock{
+        width: 100%;
+    }
+
+}
 .expertiseBlock:hover{
     transform: scale(1.1);
 }
@@ -357,7 +364,7 @@ main .nieuwsartikel h6, #detail__titel{
     align-items: center;
     height: 100vh;
     flex-wrap: wrap;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 
@@ -377,8 +384,7 @@ main .nieuwsartikel h6, #detail__titel{
 }
 
 .overons-image-container img {
-    max-width: 500px;
-    max-height: 550px;
+    width: 100%;
 }
 .overons-image-container2 img {
     max-width: 500px;
